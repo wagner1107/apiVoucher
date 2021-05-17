@@ -46,8 +46,8 @@ Route::namespace('Voucher')->group( function(){
     Route::get('/healthCheckVoucher', [VoucherController::class, 'status']);
     Route::post('/voucher/add', [VoucherController::class, 'add']);
     Route::get('/voucher', [VoucherController::class, 'list']);
-    Route::get('/voucher/email', [VoucherController::class, 'listVoucherWithEmail']);
-    Route::get('/validar', [VoucherController::class, 'select']);
     Route::put('/voucher/{id}', [VoucherController::class, 'update']);
     Route::delete('/voucher/{id}', [VoucherController::class, 'delete']);
+    Route::get('/validar', [VoucherController::class, 'select']);
+    Route::get('/voucher/email', [VoucherController::class, 'listVoucherWithEmail']);
 });
